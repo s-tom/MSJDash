@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+  width: 100%;
+  color: #e39000;
+  background-color: #070094
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  width: 100%; /* Make the container full width */
+}
+
+.header {
+  display: flex; /* Enable flexbox layout for the header */
+  align-items: center; /* Vertically align content in the header */
+}
+
+#logo {
+  width: 50px; /* Make the logo smaller */
+  margin-right: 20px; /* Add spacing between logo and title */
+}
+
+h1 {
+  font-size: 3em; /* Make the title larger */
+  text-align: center; /* Center the title */
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 20px;
+}
+
+.tile {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  display: flex;
+  align-items: center; /* Center content vertically */
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+}
+
+.tile-content {
+  display: flex;
+  align-items: center; /* Center content vertically */
+}
+
+.tile-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px; /* Space between icon and text */
+}
+
+.tile a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center; /* Center content vertically */
+}
+
+/* Tile-specific styles with colors and icons */
+.tile-teams { 
+  background-color: #6264A7; /* Teams purple */
+  color: #fff;
+}
+
+.tile-outlook { 
+  background-color: #007fff; /* Outlook blue */
+  color: #fff;
+}
+
+.tile-onedrive {
+  background-color: #70cfff; /* OneDrive green */
+  color: #fff;
+}
+
+.tile-word { 
+  background-color: #2173B5; /* Word blue */
+  color: #fff;
+}
+
+.tile-powerpoint { 
+  background-color: #ff5c5c; /* PowerPoint red */
+  color: #fff;
+}
+
+.tile-excel {
+  background-color: #58b848; /* Excel green */
+  color: #fff;
+}
+
+.tile-scratch {
+  background-color: #dba14b; /* Scratch green */
+  color: #fff;
+}
+
+.tile-canva {
+  background-color: #00a699; /* Canva teal */
+  color: #fff;
+}
+
+.tile-picsart {
+  background-color: #ff69b4; /* PicsArt pink */
+  color: #fff;
+}
